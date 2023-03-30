@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="/icon.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script defer src="script.js"></script>
+    <title>Grzybornie</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="pudloNaGrzyba">
+        <img
+          src="/dedykowany folder do zabawy/java udemi/complete-javascript-course-master/15-Mapty/starter/grzybornie logo.svg"
+          alt="Logo"
+          class="logo"
+        />
+        <p class="tekstGrzyba">Grzybornie</p>
+      </div>
+
+      <ul class="workouts">
+        <form class="form hidden">
+          <div class="form__row">
+            <label class="form__label">Typ</label>
+            <select class="form__input form__input--type">
+              <option value="running">Zbierane</option>
+              <option value="cycling">Usłyszane</option>
+            </select>
+          </div>
+          <div class="form__row">
+            <label class="form__label">Dystans</label>
+            <input class="form__input form__input--distance" placeholder="km" />
+          </div>
+          <div class="form__row">
+            <label class="form__label">Ilość</label>
+            <input
+              class="form__input form__input--duration"
+              placeholder="1-10"
+            />
+          </div>
+          <div class="form__row">
+            <label class="form__label">Jakość</label>
+            <input
+              class="form__input form__input--cadence"
+              placeholder="1-10"
+            />
+          </div>
+          <div class="form__row form__row--hidden">
+            <label class="form__label">Opinia</label>
+            <input
+              class="form__input form__input--elevation"
+              placeholder="1-10"
+            />
+          </div>
+          <button class="form__btn">OK</button>
+        </form>
+      </ul>
+
+      <p class="copyright">
+        &copy; Copyright by
+        <a
+          class="twitter-link"
+          target="_blank"
+          href="https://twitter.com/jonasschmedtman"
+          >Jonas Schmedtmann</a
+        >. Build during the Jonas Schmeddtman course.
+      </p>
+    </div>
+
+    <div id="map"></div>
+  </body>
+</html>
